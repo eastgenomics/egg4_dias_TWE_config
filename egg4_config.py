@@ -26,7 +26,7 @@ fastqc_fastqs_input_stage = "stage-Fy6fpV840vZZ0v6J8qBQYqZF.fastqs"
 ss_beds_inputs = {
     # sentieon bed
     # input is array:file so square brackets
-    "{}.targets_bed ID".format(sentieon_stage_id): "[]",
+    "{}.targets_bed ID".format(sentieon_stage_id): "[]",  # No target bed
     "{}.targets_bed".format(sentieon_stage_id): "",
     # vcf_qc
     "stage-Fy6fqy040vZV3Gj24vppvJgZ.bed_file ID": "file-Fpz2X0Q433GVK5xxPvzqvVPB",
@@ -38,7 +38,7 @@ ss_beds_inputs = {
     "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ.bed ID": "file-Fpz2X0Q433GVK5xxPvzqvVPB",
     "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ.bed": "",
     # picard
-    "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile ID": "file-Fp6B2v8433GbX90y5kX389VB",  # CHANGE
+    "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile ID": "file-G2J5ZV0433GQJz7860vb4PB1",  # Twist Capture Bed
     "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile": ""
 }
 
@@ -49,8 +49,8 @@ happy_stage_id = "stage-Fq1BPKj433Gx3K4Y8J35j0fv"
 
 happy_stage_prefix = "{}.prefix".format(happy_stage_id)
 happy_stage_bed = {
-    "{}.panel_bed ID".format(happy_stage_id): "file-Fq3J9BQ433Ggk8p1KZX1K617",
-    "{}.panel_bed".format(happy_stage_id): "file-Fq3J9BQ433Ggk8p1KZX1K617"  # CHANGE
+    "{}.panel_bed ID".format(happy_stage_id): "file-G2J5ZV0433GQJz7860vb4PB1",
+    "{}.panel_bed".format(happy_stage_id): "file-G2J5ZV0433GQJz7860vb4PB1"
 }
 
 multi_stage_input_dict = {
@@ -59,7 +59,7 @@ multi_stage_input_dict = {
     },
     "{}.query_vcf".format(happy_stage_id): {
         "app": "sentieon-dnaseq", "subdir": "",
-        "pattern": "NA12878*_markdup_recalibrated_Haplotyper.vcf.gz$", # CHECK
+        "pattern": "NA12878*_markdup_recalibrated_Haplotyper.vcf.gz$",
     },
 }
 
@@ -68,7 +68,7 @@ ms_workflow_id = "{}:workflow-FyQ2Gy0433Gz76Jp9j5YG80K".format(ref_project_id)
 # MultiQC
 
 mqc_applet_id = "{}:applet-Fz93FfQ433Gvf6pKFZYbXZQf".format(ref_project_id)
-mqc_config_file = "{}:file-Fz947KQ433GbpkvQ104ybPVg".format(ref_project_id)  # CHANGE
+mqc_config_file = "{}:file-G2J512Q433GyQgFVGyBZpxpF".format(ref_project_id)
 
 # Reports
 
