@@ -15,7 +15,7 @@ ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
 # Single workflow
 
-ss_workflow_id = "{}:workflow-G0QfxJ0433GyPP9b1VKYZYBX".format(ref_project_id)
+ss_workflow_id = "{}:workflow-G21Gx3Q433Gp80fK7z5jZ5XY".format(ref_project_id)
 
 sentieon_stage_id = "stage-Fy6fpk040vZZPPbq96Jb2KfK"
 
@@ -24,10 +24,6 @@ sentieon_R2_input_stage = "{}.reads2_fastqgzs".format(sentieon_stage_id)
 sentieon_sample_input_stage = "{}.sample".format(sentieon_stage_id)
 fastqc_fastqs_input_stage = "stage-Fy6fpV840vZZ0v6J8qBQYqZF.fastqs"
 ss_beds_inputs = {
-    # sentieon bed
-    # input is array:file so square brackets
-    "{}.targets_bed ID".format(sentieon_stage_id): "[]",  # No target bed
-    "{}.targets_bed".format(sentieon_stage_id): "",
     # vcf_qc
     "stage-Fy6fqy040vZV3Gj24vppvJgZ.bed_file ID": "file-Fpz2X0Q433GVK5xxPvzqvVPB",
     "stage-Fy6fqy040vZV3Gj24vppvJgZ.bed_file": "",
@@ -136,49 +132,6 @@ rpt_dynamic_files = {
 
 # reanalysis
 
-rea_stage_input_dict = {
-    # vcf2xls
-    "{}.annotated_vcf".format(vcf2xls_stage_id): {
-        "app": "nirvana2vcf", "subdir": "",
-        "pattern": "-E '{}(.*).annotated.vcf$'"
-    },
-    "{}.raw_vcf".format(vcf2xls_stage_id): {
-        # pattern excludes "g" because g.vcf are in the same folder
-        "app": "sentieon-dnaseq", "subdir": "",
-        "pattern": "-E '{}(.*)[^g].vcf.gz$'"
-    },
-    "{}.sample_coverage_file".format(vcf2xls_stage_id): {
-        "app": "region_coverage", "subdir": "",
-        "pattern": "-E '{}(.*)5bp.gz$'",
-    },
-    "{}.sample_coverage_index".format(vcf2xls_stage_id): {
-        "app": "region_coverage", "subdir": "",
-        "pattern": "-E '{}(.*)5bp.gz.tbi$'",
-    },
-    "{}.flagstat_file".format(vcf2xls_stage_id): {
-        "app": "flagstat", "subdir": "", "pattern": "-E '{}(.*)flagstat$'"
-    },
-    # athena
-    "{}.mosdepth_files".format(athena_stage_id): {
-        "app": "mosdepth", "subdir": "",
-        # athena requires both per-base files and reference files
-        "pattern": "-E '{}(.*)(per-base.bed.gz$|reference)'"
-    },
-}
+rea_stage_input_dict = rpt_stage_input_dict
 
-rea_dynamic_files = {
-    "{}.genepanels_file ID".format(vcf2xls_stage_id): genepanels_file,
-    "{}.genepanels_file".format(vcf2xls_stage_id): "",
-    "{}.bioinformatic_manifest ID".format(vcf2xls_stage_id): bioinformatic_manifest,
-    "{}.bioinformatic_manifest".format(vcf2xls_stage_id): "",
-    "{}.nirvana_genes2transcripts ID".format(vcf2xls_stage_id): nirvana_genes2transcripts,
-    "{}.nirvana_genes2transcripts".format(vcf2xls_stage_id): "",
-    "{}.exons_nirvana ID".format(generate_bed_stage_id): exons_nirvana,
-    "{}.exons_nirvana".format(generate_bed_stage_id): "",
-    "{}.nirvana_genes2transcripts ID".format(generate_bed_stage_id): nirvana_genes2transcripts,
-    "{}.nirvana_genes2transcripts".format(generate_bed_stage_id): "",
-    "{}.gene_panels ID".format(generate_bed_stage_id): genepanels_file,
-    "{}.gene_panels".format(generate_bed_stage_id): "",
-    "{}.exons_nirvana ID".format(athena_stage_id): exons_nirvana,
-    "{}.exons_nirvana".format(athena_stage_id): ""
-}
+rea_dynamic_files = rpt_dynamic_files
