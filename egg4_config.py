@@ -49,8 +49,8 @@ happy_stage_id = "stage-Fq1BPKj433Gx3K4Y8J35j0fv"
 
 happy_stage_prefix = "{}.prefix".format(happy_stage_id)
 happy_stage_bed = {
-    "{}.panel_bed ID".format(happy_stage_id): "file-G2QZPY04yk4JYG869p7pFZz7",
-    "{}.panel_bed".format(happy_stage_id): "file-G2QZPY04yk4JYG869p7pFZz7"
+    "{}.panel_bed ID".format(happy_stage_id): "file-G2V8k90433GVQ7v07gfj0ggX",
+    "{}.panel_bed".format(happy_stage_id): "file-G2V8k90433GVQ7v07gfj0ggX"
 }
 
 multi_stage_input_dict = {
