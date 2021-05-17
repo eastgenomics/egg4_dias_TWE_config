@@ -24,10 +24,6 @@ sentieon_R2_input_stage = "{}.reads2_fastqgzs".format(sentieon_stage_id)
 sentieon_sample_input_stage = "{}.sample".format(sentieon_stage_id)
 fastqc_fastqs_input_stage = "stage-Fy6fpV840vZZ0v6J8qBQYqZF.fastqs"
 ss_beds_inputs = {
-    # sentieon bed
-    # input is array:file so square brackets
-    "{}.targets_bed ID".format(sentieon_stage_id): "[]",  # No target bed
-    "{}.targets_bed".format(sentieon_stage_id): "",
     # vcf_qc
     "stage-Fy6fqy040vZV3Gj24vppvJgZ.bed_file ID": "file-Fpz2X0Q433GVK5xxPvzqvVPB",
     "stage-Fy6fqy040vZV3Gj24vppvJgZ.bed_file": "",
