@@ -15,7 +15,7 @@ ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
 # Single workflow
 
-ss_workflow_id = "{}:workflow-G0QfxJ0433GyPP9b1VKYZYBX".format(ref_project_id)
+ss_workflow_id = "{}:workflow-G21Gx3Q433Gp80fK7z5jZ5XY".format(ref_project_id)
 
 sentieon_stage_id = "stage-Fy6fpk040vZZPPbq96Jb2KfK"
 
@@ -59,7 +59,7 @@ multi_stage_input_dict = {
     },
     "{}.query_vcf".format(happy_stage_id): {
         "app": "sentieon-dnaseq", "subdir": "",
-        "pattern": "NA12878*_markdup_recalibrated_Haplotyper.vcf.gz$",
+        "pattern": "NA12878.*_markdup_recalibrated_Haplotyper.vcf.gz$",
     },
 }
 
