@@ -9,13 +9,13 @@ from dias_dynamic_files import (
 )
 
 assay_name = "TWE" # Twist Whole Exome
-assay_version = "v1.0.4"
+assay_version = "v1.0.5"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
 # Single workflow
 
-ss_workflow_id = "{}:workflow-G21Gx3Q433Gp80fK7z5jZ5XY".format(ref_project_id)
+ss_workflow_id = "{}:workflow-G4004gQ433GY4xG60699bXZp".format(ref_project_id)
 
 sentieon_stage_id = "stage-Fy6fpk040vZZPPbq96Jb2KfK"
 
