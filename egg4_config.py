@@ -68,6 +68,8 @@ mqc_config_file = "{}:file-G2J512Q433GyQgFVGyBZpxpF".format(ref_project_id)
 
 # Reports
 
+xlsx_flanks = 100
+
 exons_nirvana = "{}:file-Fq18Yp0433GjB7172630p9Yv".format(ref_project_id) 
 
 vcf2xls_stage_id = "stage-Fyq5ypj433GzxPK360B8Qfg5"
