@@ -142,9 +142,7 @@ rpt_dynamic_files = {
     "{}.manifest ID".format(generate_bed_xlsx_stage_id): bioinformatic_manifest,
     "{}.manifest".format(generate_bed_xlsx_stage_id): "",
     "{}.exons_nirvana ID".format(athena_stage_id): exons_nirvana,
-    "{}.exons_nirvana".format(athena_stage_id): "",
-    "{}.flank ID".format(generate_bed_xlsx_stage_id): xlsx_flanks,
-    "{}.flank".format(generate_bed_xlsx_stage_id): "",
+    "{}.exons_nirvana".format(athena_stage_id): ""
 }
 
 # reanalysis
