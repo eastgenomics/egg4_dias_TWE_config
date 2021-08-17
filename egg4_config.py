@@ -68,7 +68,7 @@ mqc_config_file = "{}:file-G2J512Q433GyQgFVGyBZpxpF".format(ref_project_id)
 
 # Reports
 
-xlsx_flanks = 100
+xlsx_flanks = 95
 
 exons_nirvana = "{}:file-Fq18Yp0433GjB7172630p9Yv".format(ref_project_id) 
 
