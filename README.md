@@ -1,2 +1,2 @@
-# egg4_dias_WES_config
-Config for the Dias WES assay
+# egg4_dias_TWE_config
+Config for the Dias TWE assay
