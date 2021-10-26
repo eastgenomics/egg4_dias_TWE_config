@@ -49,8 +49,10 @@ happy_stage_bed = {
     "{}.panel_bed".format(happy_stage_id): "file-G2V8k90433GVQ7v07gfj0ggX"
 }
 
-somalier_relate_stage_id = "stage-G5j1jJj433GpFY3v0JZQ2ZZ0"
+female_threshold = 45
+male_threshold = 1
 
+somalier_relate_stage_id = "stage-G5j1jJj433GpFY3v0JZQ2ZZ0"
 
 multi_stage_input_dict = {
     "stage-Fybykxj433GV7vJKFGf3yVkK.SampleSheet": {
