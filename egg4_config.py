@@ -86,7 +86,7 @@ vcf2xls_stage_id = "stage-Fyq5ypj433GzxPK360B8Qfg5"
 generate_bed_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
 athena_stage_id = "stage-Fyq5z18433GfYZbp3vX1KqjB"
 
-rpt_workflow_id = "project-G5KqjGj4PjqFF5V6J2ffBz2B:workflow-G5Z45fj4Pjq916fg1F4bq1kJ"
+rpt_workflow_id = "{}:workflow-G5xy050433GfXjqq84ZjY7v0".format(ref_project_id)
 
 rpt_stage_input_dict = {
     # vcf2xls
