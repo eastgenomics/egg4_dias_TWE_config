@@ -9,13 +9,13 @@ from dias_dynamic_files import (
 )
 
 assay_name = "TWE" # Twist Whole Exome
-assay_version = "v1.0.5"
+assay_version = "v1.0.6"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
 # Single workflow
 
-ss_workflow_id = "{}:workflow-G4004gQ433GY4xG60699bXZp".format(ref_project_id)
+ss_workflow_id = "{}:workflow-G5gzKx8433GYp8x7FkjV1J2j".format(ref_project_id)
 
 sentieon_stage_id = "stage-Fy6fpk040vZZPPbq96Jb2KfK"
 
@@ -49,6 +49,11 @@ happy_stage_bed = {
     "{}.panel_bed".format(happy_stage_id): "file-G2V8k90433GVQ7v07gfj0ggX"
 }
 
+female_threshold = 60
+male_threshold = 1
+
+somalier_relate_stage_id = "stage-G5j1jJj433GpFY3v0JZQ2ZZ0"
+
 multi_stage_input_dict = {
     "stage-Fybykxj433GV7vJKFGf3yVkK.SampleSheet": {
         "app": None, "subdir": "", "pattern": "SampleSheet.csv$",
@@ -57,14 +62,18 @@ multi_stage_input_dict = {
         "app": "sentieon-dnaseq", "subdir": "",
         "pattern": "^NA12878-.*-EGG4_markdup_recalibrated_Haplotyper.vcf.gz$",
     },
+    "{}.somalier_extract_file".format(somalier_relate_stage_id): {
+        "app": "somalier_extract", "subdir": "",
+        "pattern": "-E '(.*).somalier$'"
+    },
 }
 
-ms_workflow_id = "{}:workflow-G401B28433GV0QK6Bxz1k9Yv".format(ref_project_id)
+ms_workflow_id = "{}:workflow-G5j1j28433GYkv4gPpPG8g11".format(ref_project_id)
 
 # MultiQC
 
-mqc_applet_id = "{}:applet-Fz93FfQ433Gvf6pKFZYbXZQf".format(ref_project_id)
-mqc_config_file = "{}:file-G2J512Q433GyQgFVGyBZpxpF".format(ref_project_id)
+mqc_applet_id = "{}:applet-G5xxBxj433Gjfx25JP2XZ5Z2".format(ref_project_id)
+mqc_config_file = "{}:file-G5xxbp8433GxJ0jb3Q3zpf5z".format(ref_project_id)
 
 # Reports
 
@@ -77,7 +86,7 @@ vcf2xls_stage_id = "stage-Fyq5ypj433GzxPK360B8Qfg5"
 generate_bed_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
 athena_stage_id = "stage-Fyq5z18433GfYZbp3vX1KqjB"
 
-rpt_workflow_id = "{}:workflow-G4KKyjQ433GfQvf64p6YYx23".format(ref_project_id)
+rpt_workflow_id = "{}:workflow-G5xy050433GfXjqq84ZjY7v0".format(ref_project_id)
 
 rpt_stage_input_dict = {
     # vcf2xls
