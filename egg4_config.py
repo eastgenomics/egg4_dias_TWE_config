@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("/mnt/storage/apps/software/dias_config")
+sys.path.append("/home/kimy/NHS/repos/dias_batch_running/dias_config/dias_config-1.4.1")
 
 from dias_dynamic_files import (
     nirvana_genes2transcripts,
@@ -79,46 +79,31 @@ mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
 
 xlsx_flanks = 95
 
-exons_nirvana = "{}:file-Fq18Yp0433GjB7172630p9Yv".format(ref_project_id) 
+cds_file = "project-G9G1jPQ4vyJ0j6075Qpq9GkK:file-G9P8v484vyJKGFbFP030Gbgb"
+vep_config = "project-G86K7XQ4jKXPgK4Z8Zj585Zj:file-G9G3g704jKXP4QvF5XB7pzKj"
 
-vcf_annotator_stage_id = "stage-G72pJpj46jqgk1y3Kbb1KBxY"
-generate_bed_xlsx_stage_id = "stage-G4BJkJQ4JxJvBv5vJq50vJZ8"
-vcf2xls_stage_id = "stage-Fyq5ypj433GzxPK360B8Qfg5"
-generate_bed_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
+generate_bed_vep_stage_id = "stage-G4BJkJQ4JxJvBv5vJq50vJZ8"
+vep_stage_id = "stage-G9Q0jzQ4vyJ3x37X4KBKXZ5v"
+generate_workbook_stage_id = "stage-G9P8VQj4vyJBJ0kg50vzVPxY"
+generate_bed_athena_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
 athena_stage_id = "stage-Fyq5z18433GfYZbp3vX1KqjB"
 
-rpt_workflow_id = "{}:workflow-G7PG1k8433GgfJ2fGPkK5J1F".format(ref_project_id)
+rpt_workflow_id = "project-G9G1jPQ4vyJ0j6075Qpq9GkK:workflow-G9P8Kxj4vyJKyJgf0p6b1VYy"
 
 rpt_stage_input_dict = {
-    # vcf2xls
-    "{}.dest_vcf".format(vcf_annotator_stage_id): {
-        "app": "nirvana2vcf", "subdir": "",
-        "pattern": "-E '{}(.*).annotated.vcf$'"
-    },
-    "{}.raw_vcf".format(vcf2xls_stage_id): {
-        # pattern excludes "g" because g.vcf are in the same folder
-        "app": "sentieon-dnaseq", "subdir": "",
-        "pattern": "-E '{}(.*)[^g].vcf.gz$'"
-    },
-    "{}.sample_coverage_file".format(vcf2xls_stage_id): {
-        "app": "region_coverage", "subdir": "",
-        "pattern": "-E '{}(.*)5bp.gz$'",
-    },
-    "{}.sample_coverage_index".format(vcf2xls_stage_id): {
-        "app": "region_coverage", "subdir": "",
-        "pattern": "-E '{}(.*)5bp.gz.tbi$'",
-    },
-    "{}.flagstat_file".format(vcf2xls_stage_id): {
-        "app": "flagstat", "subdir": "", "pattern": "-E '{}(.*)flagstat$'"
-    },
     # generate_bed
-    "{}.sample_file".format(generate_bed_stage_id): {
+    "{}.sample_file".format(generate_bed_athena_stage_id): {
         "app": "mosdepth", "subdir": "",
         "pattern": "-E '{}(.*).per-base.bed.gz.csi$'"
     },
-    "{}.sample_file".format(generate_bed_xlsx_stage_id): {
+    "{}.sample_file".format(generate_bed_vep_stage_id): {
         "app": "mosdepth", "subdir": "",
         "pattern": "-E '{}(.*).per-base.bed.gz.csi$'"
+    },
+    # vep
+    "{}.vcf".format(vep_stage_id): {
+        "app": "sentieon-dnaseq", "subdir": "",
+        "pattern": "'{}.*.vcf.gz$'"
     },
     # athena
     "{}.mosdepth_files".format(athena_stage_id): {
@@ -129,55 +114,36 @@ rpt_stage_input_dict = {
 }
 
 rpt_dynamic_files = {
-    "{}.genepanels_file ID".format(vcf2xls_stage_id): genepanels_file,
-    "{}.genepanels_file".format(vcf2xls_stage_id): "",
-    "{}.bioinformatic_manifest ID".format(vcf2xls_stage_id): bioinformatic_manifest,
-    "{}.bioinformatic_manifest".format(vcf2xls_stage_id): "",
-    "{}.nirvana_genes2transcripts ID".format(vcf2xls_stage_id): nirvana_genes2transcripts,
-    "{}.nirvana_genes2transcripts".format(vcf2xls_stage_id): "",
-    "{}.exons_nirvana ID".format(generate_bed_stage_id): exons_nirvana,
-    "{}.exons_nirvana".format(generate_bed_stage_id): "",
-    "{}.exons_nirvana ID".format(generate_bed_xlsx_stage_id): exons_nirvana,
-    "{}.exons_nirvana".format(generate_bed_xlsx_stage_id): "",
-    "{}.nirvana_genes2transcripts ID".format(generate_bed_stage_id): nirvana_genes2transcripts,
-    "{}.nirvana_genes2transcripts".format(generate_bed_stage_id): "",
-    "{}.nirvana_genes2transcripts ID".format(generate_bed_xlsx_stage_id): nirvana_genes2transcripts,
-    "{}.nirvana_genes2transcripts".format(generate_bed_xlsx_stage_id): "",
-    "{}.gene_panels ID".format(generate_bed_stage_id): genepanels_file,
-    "{}.gene_panels".format(generate_bed_stage_id): "",
-    "{}.gene_panels ID".format(generate_bed_xlsx_stage_id): genepanels_file,
-    "{}.gene_panels".format(generate_bed_xlsx_stage_id): "",
-    "{}.manifest ID".format(generate_bed_stage_id): bioinformatic_manifest,
-    "{}.manifest".format(generate_bed_stage_id): "",
-    "{}.manifest ID".format(generate_bed_xlsx_stage_id): bioinformatic_manifest,
-    "{}.manifest".format(generate_bed_xlsx_stage_id): "",
-    "{}.exons_nirvana ID".format(athena_stage_id): exons_nirvana,
+    # inputs for generate bed for vep
+    "{}.exons_nirvana ID".format(generate_bed_vep_stage_id): cds_file,
+    "{}.exons_nirvana".format(generate_bed_vep_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(generate_bed_vep_stage_id): nirvana_genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(generate_bed_vep_stage_id): "",
+    "{}.gene_panels ID".format(generate_bed_vep_stage_id): genepanels_file,
+    "{}.gene_panels".format(generate_bed_vep_stage_id): "",
+    "{}.manifest ID".format(generate_bed_vep_stage_id): bioinformatic_manifest,
+    "{}.manifest".format(generate_bed_vep_stage_id): "",
+    # inputs for generate bed for athena
+    "{}.exons_nirvana ID".format(generate_bed_athena_stage_id): cds_file,
+    "{}.exons_nirvana".format(generate_bed_athena_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(generate_bed_athena_stage_id): nirvana_genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(generate_bed_athena_stage_id): "",
+    "{}.gene_panels ID".format(generate_bed_athena_stage_id): genepanels_file,
+    "{}.gene_panels".format(generate_bed_athena_stage_id): "",
+    "{}.manifest ID".format(generate_bed_athena_stage_id): bioinformatic_manifest,
+    "{}.manifest".format(generate_bed_athena_stage_id): "",
+    # inputs for athena
+    "{}.exons_nirvana ID".format(athena_stage_id): cds_file,
     "{}.exons_nirvana".format(athena_stage_id): ""
 }
 
 # reanalysis
 
 rea_stage_input_dict = {
-    # vcf2xls
-    "{}.dest_vcf".format(vcf_annotator_stage_id): {
-        "app": "nirvana2vcf", "subdir": "",
-        "pattern": "-E '{}(.*).annotated.vcf$'"
-    },
-    "{}.raw_vcf".format(vcf2xls_stage_id): {
-        # pattern excludes "g" because g.vcf are in the same folder
+    # vep
+    "{}.vcf".format(vep_stage_id): {
         "app": "sentieon-dnaseq", "subdir": "",
-        "pattern": "-E '{}(.*)[^g].vcf.gz$'"
-    },
-    "{}.sample_coverage_file".format(vcf2xls_stage_id): {
-        "app": "region_coverage", "subdir": "",
-        "pattern": "-E '{}(.*)5bp.gz$'",
-    },
-    "{}.sample_coverage_index".format(vcf2xls_stage_id): {
-        "app": "region_coverage", "subdir": "",
-        "pattern": "-E '{}(.*)5bp.gz.tbi$'",
-    },
-    "{}.flagstat_file".format(vcf2xls_stage_id): {
-        "app": "flagstat", "subdir": "", "pattern": "-E '{}(.*)flagstat$'"
+        "pattern": "'{}.*.vcf.gz$'"
     },
     # athena
     "{}.mosdepth_files".format(athena_stage_id): {
@@ -188,24 +154,21 @@ rea_stage_input_dict = {
 }
 
 rea_dynamic_files = {
-    "{}.genepanels_file ID".format(vcf2xls_stage_id): genepanels_file,
-    "{}.genepanels_file".format(vcf2xls_stage_id): "",
-    "{}.bioinformatic_manifest ID".format(vcf2xls_stage_id): bioinformatic_manifest,
-    "{}.bioinformatic_manifest".format(vcf2xls_stage_id): "",
-    "{}.nirvana_genes2transcripts ID".format(vcf2xls_stage_id): nirvana_genes2transcripts,
-    "{}.nirvana_genes2transcripts".format(vcf2xls_stage_id): "",
-    "{}.exons_nirvana ID".format(generate_bed_stage_id): exons_nirvana,
-    "{}.exons_nirvana".format(generate_bed_stage_id): "",
-    "{}.exons_nirvana ID".format(generate_bed_xlsx_stage_id): exons_nirvana,
-    "{}.exons_nirvana".format(generate_bed_xlsx_stage_id): "",
-    "{}.nirvana_genes2transcripts ID".format(generate_bed_stage_id): nirvana_genes2transcripts,
-    "{}.nirvana_genes2transcripts".format(generate_bed_stage_id): "",
-    "{}.nirvana_genes2transcripts ID".format(generate_bed_xlsx_stage_id): nirvana_genes2transcripts,
-    "{}.nirvana_genes2transcripts".format(generate_bed_xlsx_stage_id): "",
-    "{}.gene_panels ID".format(generate_bed_stage_id): genepanels_file,
-    "{}.gene_panels".format(generate_bed_stage_id): "",
-    "{}.gene_panels ID".format(generate_bed_xlsx_stage_id): genepanels_file,
-    "{}.gene_panels".format(generate_bed_xlsx_stage_id): "",
-    "{}.exons_nirvana ID".format(athena_stage_id): exons_nirvana,
+    # inputs for generate bed for vep
+    "{}.exons_nirvana ID".format(generate_bed_vep_stage_id): cds_file,
+    "{}.exons_nirvana".format(generate_bed_vep_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(generate_bed_vep_stage_id): nirvana_genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(generate_bed_vep_stage_id): "",
+    "{}.gene_panels ID".format(generate_bed_vep_stage_id): genepanels_file,
+    "{}.gene_panels".format(generate_bed_vep_stage_id): "",
+    # inputs for generate bed for athena
+    "{}.exons_nirvana ID".format(generate_bed_athena_stage_id): cds_file,
+    "{}.exons_nirvana".format(generate_bed_athena_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(generate_bed_athena_stage_id): nirvana_genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(generate_bed_athena_stage_id): "",
+    "{}.gene_panels ID".format(generate_bed_athena_stage_id): genepanels_file,
+    "{}.gene_panels".format(generate_bed_athena_stage_id): "",
+    # inputs for athena
+    "{}.exons_nirvana ID".format(athena_stage_id): cds_file,
     "{}.exons_nirvana".format(athena_stage_id): ""
 }
