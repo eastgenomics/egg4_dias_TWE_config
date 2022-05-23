@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("/home/kimy/NHS/repos/dias_batch_running/dias_config/dias_config-1.4.1")
+sys.path.append("/home/kimy/NHS/repos/dias_batch_running/dias_config/")
 
 from dias_dynamic_files import (
     nirvana_genes2transcripts,
@@ -79,16 +79,16 @@ mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
 
 xlsx_flanks = 95
 
-cds_file = "project-G9G1jPQ4vyJ0j6075Qpq9GkK:file-G9P8v484vyJKGFbFP030Gbgb"
-vep_config = "project-G86K7XQ4jKXPgK4Z8Zj585Zj:file-G9G3g704jKXP4QvF5XB7pzKj"
+cds_file = "project-G9G1jPQ4vyJ0j6075Qpq9GkK:file-GB2PxQ84vyJFk6V44kFBZfZG"
+vep_config = "project-G9Q2B8843VxFBb9Y4j3PJ0g6:file-GB3643843VxFk6V44kFBgzkV"
 
-generate_bed_vep_stage_id = "stage-G4BJkJQ4JxJvBv5vJq50vJZ8"
+generate_bed_vep_stage_id = "stage-G9P8p104vyJJGy6y86FQBxkv"
 vep_stage_id = "stage-G9Q0jzQ4vyJ3x37X4KBKXZ5v"
 generate_workbook_stage_id = "stage-G9P8VQj4vyJBJ0kg50vzVPxY"
 generate_bed_athena_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
 athena_stage_id = "stage-Fyq5z18433GfYZbp3vX1KqjB"
 
-rpt_workflow_id = "project-G9G1jPQ4vyJ0j6075Qpq9GkK:workflow-G9P8Kxj4vyJKyJgf0p6b1VYy"
+rpt_workflow_id = "project-GB3pqP84VyBVkg2f4JkBXjVf:workflow-GB3q2qQ4VyBxGq5K4KGp9p0j"
 
 rpt_stage_input_dict = {
     # generate_bed
@@ -103,7 +103,7 @@ rpt_stage_input_dict = {
     # vep
     "{}.vcf".format(vep_stage_id): {
         "app": "sentieon-dnaseq", "subdir": "",
-        "pattern": "'{}.*.vcf.gz$'"
+        "pattern": "-E '{}(.*)[^g].vcf.gz$'"
     },
     # athena
     "{}.mosdepth_files".format(athena_stage_id): {
@@ -133,8 +133,8 @@ rpt_dynamic_files = {
     "{}.manifest ID".format(generate_bed_athena_stage_id): bioinformatic_manifest,
     "{}.manifest".format(generate_bed_athena_stage_id): "",
     # inputs for athena
-    "{}.exons_nirvana ID".format(athena_stage_id): cds_file,
-    "{}.exons_nirvana".format(athena_stage_id): ""
+    "{}.exons_file ID".format(athena_stage_id): cds_file,
+    "{}.exons_file".format(athena_stage_id): ""
 }
 
 # reanalysis
@@ -143,7 +143,7 @@ rea_stage_input_dict = {
     # vep
     "{}.vcf".format(vep_stage_id): {
         "app": "sentieon-dnaseq", "subdir": "",
-        "pattern": "'{}.*.vcf.gz$'"
+        "pattern": "-E '{}(.*)[^g].vcf.gz$'"
     },
     # athena
     "{}.mosdepth_files".format(athena_stage_id): {
@@ -169,6 +169,6 @@ rea_dynamic_files = {
     "{}.gene_panels ID".format(generate_bed_athena_stage_id): genepanels_file,
     "{}.gene_panels".format(generate_bed_athena_stage_id): "",
     # inputs for athena
-    "{}.exons_nirvana ID".format(athena_stage_id): cds_file,
-    "{}.exons_nirvana".format(athena_stage_id): ""
+    "{}.exons_file ID".format(athena_stage_id): cds_file,
+    "{}.exons_file".format(athena_stage_id): ""
 }
