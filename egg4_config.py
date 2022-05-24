@@ -117,8 +117,8 @@ rpt_dynamic_files = {
     # inputs for generate bed for vep
     "{}.exons_nirvana ID".format(generate_bed_vep_stage_id): cds_file,
     "{}.exons_nirvana".format(generate_bed_vep_stage_id): "",
-    "{}.genes2transcripts ID".format(generate_bed_vep_stage_id): genes2transcripts,
-    "{}.genes2transcripts".format(generate_bed_vep_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(generate_bed_vep_stage_id): genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(generate_bed_vep_stage_id): "",
     "{}.gene_panels ID".format(generate_bed_vep_stage_id): genepanels_file,
     "{}.gene_panels".format(generate_bed_vep_stage_id): "",
     "{}.manifest ID".format(generate_bed_vep_stage_id): bioinformatic_manifest,
@@ -126,8 +126,8 @@ rpt_dynamic_files = {
     # inputs for generate bed for athena
     "{}.exons_nirvana ID".format(generate_bed_athena_stage_id): cds_file,
     "{}.exons_nirvana".format(generate_bed_athena_stage_id): "",
-    "{}.genes2transcripts ID".format(generate_bed_athena_stage_id): genes2transcripts,
-    "{}.genes2transcripts".format(generate_bed_athena_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(generate_bed_athena_stage_id): genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(generate_bed_athena_stage_id): "",
     "{}.gene_panels ID".format(generate_bed_athena_stage_id): genepanels_file,
     "{}.gene_panels".format(generate_bed_athena_stage_id): "",
     "{}.manifest ID".format(generate_bed_athena_stage_id): bioinformatic_manifest,
@@ -157,15 +157,15 @@ rea_dynamic_files = {
     # inputs for generate bed for vep
     "{}.exons_nirvana ID".format(generate_bed_vep_stage_id): cds_file,
     "{}.exons_nirvana".format(generate_bed_vep_stage_id): "",
-    "{}.genes2transcripts ID".format(generate_bed_vep_stage_id): genes2transcripts,
-    "{}.genes2transcripts".format(generate_bed_vep_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(generate_bed_vep_stage_id): genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(generate_bed_vep_stage_id): "",
     "{}.gene_panels ID".format(generate_bed_vep_stage_id): genepanels_file,
     "{}.gene_panels".format(generate_bed_vep_stage_id): "",
     # inputs for generate bed for athena
     "{}.exons_nirvana ID".format(generate_bed_athena_stage_id): cds_file,
     "{}.exons_nirvana".format(generate_bed_athena_stage_id): "",
-    "{}.genes2transcripts ID".format(generate_bed_athena_stage_id): genes2transcripts,
-    "{}.genes2transcripts".format(generate_bed_athena_stage_id): "",
+    "{}.nirvana_genes2transcripts ID".format(generate_bed_athena_stage_id): genes2transcripts,
+    "{}.nirvana_genes2transcripts".format(generate_bed_athena_stage_id): "",
     "{}.gene_panels ID".format(generate_bed_athena_stage_id): genepanels_file,
     "{}.gene_panels".format(generate_bed_athena_stage_id): "",
     # inputs for athena
