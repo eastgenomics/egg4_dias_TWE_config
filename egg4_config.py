@@ -80,6 +80,7 @@ mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
 xlsx_flanks = 95
 
 cds_file = "{}:file-GB2Pk10433Gp62yK4Qk2yFXQ".format(ref_project_id)
+cds_file_for_athena = "{}:file-GB5pqz8433GXf5gP49y3xJJB".format(ref_project_id)
 vep_config = "project-G9Q2B8843VxFBb9Y4j3PJ0g6:file-GB3643843VxFk6V44kFBgzkV"
 
 generate_bed_vep_stage_id = "stage-G9P8p104vyJJGy6y86FQBxkv"
@@ -133,7 +134,7 @@ rpt_dynamic_files = {
     "{}.manifest ID".format(generate_bed_athena_stage_id): bioinformatic_manifest,
     "{}.manifest".format(generate_bed_athena_stage_id): "",
     # inputs for athena
-    "{}.exons_file ID".format(athena_stage_id): cds_file,
+    "{}.exons_file ID".format(athena_stage_id): cds_file_for_athena,
     "{}.exons_file".format(athena_stage_id): ""
 }
 
@@ -169,6 +170,6 @@ rea_dynamic_files = {
     "{}.gene_panels ID".format(generate_bed_athena_stage_id): genepanels_file,
     "{}.gene_panels".format(generate_bed_athena_stage_id): "",
     # inputs for athena
-    "{}.exons_file ID".format(athena_stage_id): cds_file,
+    "{}.exons_file ID".format(athena_stage_id): cds_file_for_athena,
     "{}.exons_file".format(athena_stage_id): ""
 }
