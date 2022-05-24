@@ -9,7 +9,7 @@ from dias_dynamic_files import (
 )
 
 assay_name = "TWE" # Twist Whole Exome
-assay_version = "v1.0.9"
+assay_version = "v1.1.0"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -79,7 +79,7 @@ mqc_config_file = "{}:file-G82027Q433Gfx69zGvjq7PqQ".format(ref_project_id)
 
 xlsx_flanks = 95
 
-cds_file = "project-G9G1jPQ4vyJ0j6075Qpq9GkK:file-GB2PxQ84vyJFk6V44kFBZfZG"
+cds_file = "{}:file-GB2Pk10433Gp62yK4Qk2yFXQ".format(ref_project_id)
 vep_config = "project-G9Q2B8843VxFBb9Y4j3PJ0g6:file-GB3643843VxFk6V44kFBgzkV"
 
 generate_bed_vep_stage_id = "stage-G9P8p104vyJJGy6y86FQBxkv"
@@ -88,7 +88,7 @@ generate_workbook_stage_id = "stage-G9P8VQj4vyJBJ0kg50vzVPxY"
 generate_bed_athena_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
 athena_stage_id = "stage-Fyq5z18433GfYZbp3vX1KqjB"
 
-rpt_workflow_id = "project-GB3pqP84VyBVkg2f4JkBXjVf:workflow-GB3q2qQ4VyBxGq5K4KGp9p0j"
+rpt_workflow_id = "project-GB3pqP84VyBVkg2f4JkBXjVf:workflow-GB6B8Y84VyBzk4vVJX7qq9pF"
 
 rpt_stage_input_dict = {
     # generate_bed
