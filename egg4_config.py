@@ -81,7 +81,7 @@ xlsx_flanks = 95
 
 cds_file = "{}:file-GB2Pk10433Gp62yK4Qk2yFXQ".format(ref_project_id)
 cds_file_for_athena = "{}:file-GB5pqz8433GXf5gP49y3xJJB".format(ref_project_id)
-vep_config = "project-G9Q2B8843VxFBb9Y4j3PJ0g6:file-GB3643843VxFk6V44kFBgzkV"
+vep_config = "{}:file-GB69B1j43Vx9f0ZYGbKf9xQ1".format(ref_project_id)
 
 generate_bed_vep_stage_id = "stage-G9P8p104vyJJGy6y86FQBxkv"
 vep_stage_id = "stage-G9Q0jzQ4vyJ3x37X4KBKXZ5v"
@@ -89,7 +89,7 @@ generate_workbook_stage_id = "stage-G9P8VQj4vyJBJ0kg50vzVPxY"
 generate_bed_athena_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
 athena_stage_id = "stage-Fyq5z18433GfYZbp3vX1KqjB"
 
-rpt_workflow_id = "project-GB3pqP84VyBVkg2f4JkBXjVf:workflow-GB6B8Y84VyBzk4vVJX7qq9pF"
+rpt_workflow_id = "{}:workflow-GB727K8433GxkG4XFy1k6KYq".format(ref_project_id)
 
 rpt_stage_input_dict = {
     # generate_bed
