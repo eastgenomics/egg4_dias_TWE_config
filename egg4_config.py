@@ -89,7 +89,7 @@ generate_workbook_stage_id = "stage-G9P8VQj4vyJBJ0kg50vzVPxY"
 generate_bed_athena_stage_id = "stage-Fyq5yy0433GXxz691bKyvjPJ"
 athena_stage_id = "stage-Fyq5z18433GfYZbp3vX1KqjB"
 
-rpt_workflow_id = "project-GB7bp3Q48X8Fg2GF3F0VV13x:workflow-GB7gZ4048X89xVGFF2xbXG20"
+rpt_workflow_id = "{}:workflow-GB8BBKQ433GXKXzkFYVqVJp5".format(ref_project_id)
 
 rpt_stage_input_dict = {
     # generate_bed
