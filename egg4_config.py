@@ -80,8 +80,8 @@ mqc_config_file = "{}:file-G82Y3Kj433GV6bG91pB5VzG0".format(ref_project_id)
 xlsx_flanks = 495
 
 cds_file = "{}:file-GF611Z8433Gk7gZ47gypK7ZZ".format(ref_project_id)
-cds_file_for_athena = "{}:file-GB7pXZ0433GX1YJKF5382bbX".format(ref_project_id)
-vep_config = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
+cds_file_for_athena = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
+vep_config = "{}:file-GB69B1j43Vx9f0ZYGbKf9xQ1".format(ref_project_id)
 
 generate_bed_vep_stage_id = "stage-G9P8p104vyJJGy6y86FQBxkv"
 vep_stage_id = "stage-G9Q0jzQ4vyJ3x37X4KBKXZ5v"
