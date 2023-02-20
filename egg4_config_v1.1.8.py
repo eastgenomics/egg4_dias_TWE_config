@@ -9,7 +9,7 @@ from dias_dynamic_files import (
 )
 
 assay_name = "TWE" # Twist Whole Exome
-assay_version = "v1.1.6"
+assay_version = "v1.1.8"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
