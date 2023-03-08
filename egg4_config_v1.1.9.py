@@ -9,7 +9,7 @@ from dias_dynamic_files import (
 )
 
 assay_name = "TWE" # Twist Whole Exome
-assay_version = "v1.1.8"
+assay_version = "v1.1.9"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -81,7 +81,7 @@ xlsx_flanks = 495
 
 cds_file = "{}:file-GF611Z8433Gk7gZ47gypK7ZZ".format(ref_project_id)
 cds_file_for_athena = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
-vep_config = "{}:file-GPJx40Q44F7bzKQKJ568pvkZ".format(ref_project_id)
+vep_config = "{}:file-GPzXVXj47jpJbVP8PyBgX0GQ".format(ref_project_id)
 
 generate_bed_vep_stage_id = "stage-G9P8p104vyJJGy6y86FQBxkv"
 vep_stage_id = "stage-G9Q0jzQ4vyJ3x37X4KBKXZ5v"
