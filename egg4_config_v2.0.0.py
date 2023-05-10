@@ -1,79 +1,7 @@
-import sys
-
-sys.path.append("/mnt/storage/apps/software/dias_config/")
-
-from dias_dynamic_files import (
-    genes2transcripts,
-    bioinformatic_manifest,
-    genepanels_file,
-)
-
 assay_name = "TWE" # Twist Whole Exome
 assay_version = "v2.0.0"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
-
-# Single workflow
-
-ss_workflow_id = "{}:workflow-G5gzKx8433GYp8x7FkjV1J2j".format(ref_project_id)
-
-sentieon_stage_id = "stage-Fy6fpk040vZZPPbq96Jb2KfK"
-
-sentieon_R1_input_stage = "{}.reads_fastqgzs".format(sentieon_stage_id)
-sentieon_R2_input_stage = "{}.reads2_fastqgzs".format(sentieon_stage_id)
-sentieon_sample_input_stage = "{}.sample".format(sentieon_stage_id)
-fastqc_fastqs_input_stage = "stage-Fy6fpV840vZZ0v6J8qBQYqZF.fastqs"
-ss_beds_inputs = {
-    # vcf_qc
-    "stage-Fy6fqy040vZV3Gj24vppvJgZ.bed_file ID": "file-Fpz2X0Q433GVK5xxPvzqvVPB",
-    "stage-Fy6fqy040vZV3Gj24vppvJgZ.bed_file": "",
-    # region coverage
-    "stage-G21GzGj433Gky42j42Q5bJkf.input_bed ID": "file-Fpz2X0Q433GVK5xxPvzqvVPB",
-    "stage-G21GzGj433Gky42j42Q5bJkf.input_bed": "",
-    # mosdepth
-    "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ.bed ID": "file-Fpz2X0Q433GVK5xxPvzqvVPB",
-    "stage-Fy6fvYQ40vZV1y8p9GYKPYyQ.bed": "",
-    # picard
-    "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile ID": "file-G2J5ZV0433GQJz7860vb4PB1",  # Twist Capture Bed
-    "stage-Fy6fx2Q40vZbFVxZ283xXGVY.bedfile": ""
-}
-
-
-# Multi workflow
-
-happy_stage_id = "stage-Fq1BPKj433Gx3K4Y8J35j0fv"
-
-happy_stage_prefix = "{}.prefix".format(happy_stage_id)
-happy_stage_bed = {
-    "{}.panel_bed ID".format(happy_stage_id): "file-G2V8k90433GVQ7v07gfj0ggX",
-    "{}.panel_bed".format(happy_stage_id): "file-G2V8k90433GVQ7v07gfj0ggX"
-}
-
-female_threshold = 60
-male_threshold = 1
-
-somalier_relate_stage_id = "stage-G5j1jJj433GpFY3v0JZQ2ZZ0"
-
-multi_stage_input_dict = {
-    "stage-Fybykxj433GV7vJKFGf3yVkK.SampleSheet": {
-        "app": None, "subdir": "", "pattern": "SampleSheet.csv$",
-    },
-    "{}.query_vcf".format(happy_stage_id): {
-        "app": "sentieon-dnaseq", "subdir": "",
-        "pattern": "^NA12878-.*-EGG4_markdup_recalibrated_Haplotyper.vcf.gz$",
-    },
-    "{}.somalier_extract_file".format(somalier_relate_stage_id): {
-        "app": "somalier_extract", "subdir": "",
-        "pattern": "-E '(.*).somalier$'"
-    },
-}
-
-ms_workflow_id = "{}:workflow-G5j1j28433GYkv4gPpPG8g11".format(ref_project_id)
-
-# MultiQC
-
-mqc_applet_id = "app-G6FyybQ4f4xqqpFfGqg34y2Y"
-mqc_config_file = "{}:file-G82Y3Kj433GV6bG91pB5VzG0".format(ref_project_id)
 
 # Reports
 
