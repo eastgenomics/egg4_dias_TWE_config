@@ -1,5 +1,5 @@
 assay_name = "TWE" # Twist Whole Exome
-assay_version = "v2.0.1"
+assay_version = "v2.0.2"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
@@ -22,7 +22,7 @@ exons_file = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
 
 ## for eggd_VEP
 # VEP config file for SNV reports v1.1.3
-vep_config = "{}:file-GVggzJj4f6PgYy7B634PPZ1B".format(ref_project_id)
+vep_config = "{}:file-GXJy7F04j4fV8gj37qYgfFfg".format(ref_project_id)
 
 
 ### Apps and workflows:
