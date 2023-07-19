@@ -67,7 +67,9 @@ rpt_dynamic_files = {
     "{}.gene_panels".format(generate_bed_athena_stage_id): "",
     # inputs for athena
     "{}.exons_file ID".format(athena_stage_id): exons_file,
-    "{}.exons_file".format(athena_stage_id): ""
+    "{}.exons_file".format(athena_stage_id): "",
+    "{}.limit".format(athena_stage_id): 260,
+    "{}.summary".format(athena_stage_id): True
 }
 
 # Sample-specific input files and their search patterns
