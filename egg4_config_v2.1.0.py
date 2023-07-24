@@ -29,7 +29,7 @@ vep_config = "{}:file-GXJy7F04j4fV8gj37qYgfFfg".format(ref_project_id)
 
 # dias_reports
 # v2.1.0
-rpt_workflow_id = "{}:workflow-GBQ985Q433GYJjv0379PJqqg".format(ref_project_id)
+rpt_workflow_id = "project-GXvQGY04QPQxjbz9zXVYF3xK:workflow-GXvYQ104QPQqx7pxjYZV5PXQ"
 
 generate_bed_vep_stage_id = "stage-rpt_generate_bed_vep"
 vep_stage_id = "stage-rpt_vep"
