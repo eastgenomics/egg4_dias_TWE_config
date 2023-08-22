@@ -22,7 +22,7 @@ exons_file = "{}:file-GF611Z8433Gf99pBPbJkV7bq".format(ref_project_id)
 
 ## for eggd_VEP
 # VEP config file for SNV reports v1.1.5
-vep_config = "{}:file-GXvb2Y04j4fjv6vf5yGFpXFj".format(ref_project_id)
+vep_config = "{}:file-GYXBvqQ4vFPbGg44FQ101gXk".format(ref_project_id)
 
 
 ### Apps and workflows:
