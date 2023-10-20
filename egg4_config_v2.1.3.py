@@ -49,7 +49,7 @@ rpt_dynamic_files = {
     "{}.config_file ID".format(vep_stage_id): vep_config,
     "{}.config_file".format(vep_stage_id): "",
     # inputs for generate_variant_workbook
-    "{}.exclude_columns".format(generate_workbook_stage_id): "BaseQRankSum ClippingRankSum DB ExcessHet FS MLEAC MLEAF MQ MQRankSum QD ReadPosRankSum SOR PL QUAL ID FILTER  CSQ_ClinVar_CLNSIGCONF  CSQ_Allele CSQ_HGNC_ID DP AC AF AN CSQ_SpliceAI_pred_DP_AL CSQ_SpliceAI_pred_DP_AG CSQ_SpliceAI_pred_DP_DG CSQ_SpliceAI_pred_DP_DL",
+    "{}.exclude_columns".format(generate_workbook_stage_id): "BaseQRankSum ClippingRankSum DB ExcessHet FS MLEAC MLEAF MQ MQRankSum QD ReadPosRankSum SOR PL QUAL ID FILTER  CSQ_ClinVar_CLNSIGCONF  CSQ_Allele CSQ_HGNC_ID DP AC AF AN CSQ_SpliceAI_pred_DP_AL CSQ_SpliceAI_pred_DP_AG CSQ_SpliceAI_pred_DP_DG CSQ_SpliceAI_pred_DP_DL gnomADe_AC_popmax gnomADe_AF_popmax gnomADe_AN_popmax gnomADe_nhomalt gnomADe_nhomalt_popmax gnomADe_non_cancer_AC gnomADe_non_cancer_AC_popmax gnomADe_non_cancer_AF gnomADe_non_cancer_AF_popmax gnomADe_non_cancer_AN gnomADe_non_cancer_AN_popmax gnomADe_non_cancer_nhomalt gnomADe_non_cancer_nhomalt_popmax gnomADe_non_cancer_popmax gnomADe_popmax gnomADg_AC_popmax gnomADg_AF_popmax gnomADg_AN_popmax gnomADg_nhomalt gnomADg_nhomalt_popmax gnomADg_popmax",
     "{}.acmg".format(generate_workbook_stage_id): "true",
     "{}.rename_columns".format(generate_workbook_stage_id): "CSQ_Feature=Transcript DP_FMT=DP",
     "{}.add_comment_column".format(generate_workbook_stage_id): "true",
