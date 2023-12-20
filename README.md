@@ -5,7 +5,7 @@
 >
 > When new eggd_dias_batch goes live the python script will be deleted
 
-# dias_TWE_config_GRCh37_v3.0.0.json
+# dias_TWE_config_GRCh37_v3.0.1.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for TWE data.
 
@@ -31,4 +31,4 @@ Dynamic files:
 | exons_nirvana | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
 | genes2transcripts | **230421_g2t.tsv** | `file-GV4P970433Gj6812zGVBZvB4` |
 | exons_file for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
-| twe_vep_config for SNV reports | **twe_vep_config_v1.1.10.json** | `file-GbPZJyQ4j4fk3FZzFVGxKV3j` |
+| twe_vep_config for SNV reports | **twe_vep_config_v1.1.11.json** | `file-Gf0q8fj4j4fZG84VJ9YYvKVk` |
