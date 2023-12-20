@@ -1,5 +1,5 @@
 assay_name = "TWE" # Twist Whole Exome
-assay_version = "v2.1.5"
+assay_version = "v2.1.6"
 
 ref_project_id = "project-Fkb6Gkj433GVVvj73J7x8KbV"
 
