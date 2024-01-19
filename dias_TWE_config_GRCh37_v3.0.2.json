@@ -1,6 +1,6 @@
 {
     "assay": "TWE",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "snv_report_workflow_id": "workflow-GXzkfYj4QPQp9z4Jz4BF09y6",
     "reference_files": {
         "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GVx0vkQ433Gvq63k1Kj4Y562",
@@ -27,7 +27,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gf0q8fj4j4fZG84VJ9YYvKVk"
+                        "id": "file-GfZP8884j4fzp14Y3gPZVZF1"
                     }
                 },
                 "stage-rpt_vep.vcf": {
