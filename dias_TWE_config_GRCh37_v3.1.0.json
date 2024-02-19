@@ -71,6 +71,17 @@
                     "name": "per-base.bed.gz$|reference_build.txt$"
                 }
             }
+        },
+        "artemis": {
+            "inputs": {
+                "url_duration": 15811200,
+                "capture_bed": {
+                    "$dnanexus_link": {
+                        "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+                        "id": "file-GFPxpJj4GVV0Pfzv4VGYf1pq"
+                    }
+                }
+            }
         }
     }
 }
