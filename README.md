@@ -10,7 +10,7 @@ New versions of apps and app inputs for use in the Dias pipeline can be updated 
 ## Parts of the config
 The config specifies app IDs and workflow IDs at the top, followed by a `reference_files` dict for inputs that could be used in multiple running modes. The `modes` section specifies inputs specific to a running mode. The TWE config currently only has one running mode:
 * dias_reports
-    * specifies the  inputs for dias_reports.
+    * specifies the inputs for dias_reports.
 
 ## Versions of workflows and dynamic files in the config
 Workflows:
@@ -20,8 +20,8 @@ Workflows:
 Dynamic files:
 | File      | File name | DNAnexus file ID |
 | --------- | --------- | ---------------- |
-| genepanels | **230602_genepanels.tsv** | `file-GVx0vkQ433Gvq63k1Kj4Y562` |
+| genepanels | **240213_genepanels.tsv** | `file-GgBG75Q433Gk4pY5qpxbgVyz` |
 | exons_nirvana | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
-| genes2transcripts | **230421_g2t.tsv** | `file-GV4P970433Gj6812zGVBZvB4` |
+| genes2transcripts | **240213_g2t.tsv** | `file-GgBG6p8433Gg7XK69fG7P9j7` |
 | exons_file for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
 | twe_vep_config for SNV reports | **twe_vep_config_v1.1.12.json** | `file-GfZP8884j4fzp14Y3gPZVZF1` |
