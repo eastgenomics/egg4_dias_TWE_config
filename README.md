@@ -24,4 +24,4 @@ Dynamic files:
 | exons_nirvana | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
 | genes2transcripts | **240213_g2t.tsv** | `file-GgBG6p8433Gg7XK69fG7P9j7` |
 | exons_file for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
-| twe_vep_config for SNV reports | **twe_vep_config_v1.1.12.json** | `file-GfZP8884j4fzp14Y3gPZVZF1` |
+| twe_vep_config for SNV reports | **twe_vep_config_v1.1.13.json** | `file-GgBz84Q4j4fZYV62y0XXG02g` |
