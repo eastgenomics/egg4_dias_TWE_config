@@ -14,8 +14,8 @@ The config specifies app IDs and workflow IDs at the top, followed by a `referen
 
 ## Versions of workflows and dynamic files in the config
 Workflows:
-* Dias reports: **dias_reports_v2.1.0**
-    * DNAnexus workflow ID: `workflow-GXzkfYj4QPQp9z4Jz4BF09y6`
+* Dias reports: **dias_reports_v2.1.1**
+    * DNAnexus workflow ID: `workflow-GgYZpjj4396yBj512yFQZ1fx`
 
 Dynamic files:
 | File      | File name | DNAnexus file ID |
