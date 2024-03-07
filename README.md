@@ -1,21 +1,21 @@
-# dias_TWE_config_GRCh37_v3.0.2.json
+# dias_TWE_config_GRCh37_v3.0.3.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for TWE data.
 
 ## What does the config do?
-eggd_dias_batch ([https://github.com/eastgenomics/dias_batch_running](https://github.com/eastgenomics/dias_batch_running)) is a DNAnexus app that runs the Dias pipeline for germline sequence data analysis. The egg5_dias_TWE_config repo contains the dias_TWE_config file that specifies the executables and their input files to be used in the Dias pipeline for analysing TWE data on build GRCh37.
+eggd_dias_batch ([https://github.com/eastgenomics/eggd_dias_batch](https://github.com/eastgenomics/eggd_dias_batch)) is a DNAnexus app that runs the Dias pipeline for germline sequence data analysis. The egg4_dias_TWE_config repo contains the dias_TWE_config file that specifies the executables and their input files to be used in the Dias pipeline for analysing TWE data on build GRCh37.
 
 New versions of apps and app inputs for use in the Dias pipeline can be updated in the config without needing to update the pipeline itself.
 
 ## Parts of the config
 The config specifies app IDs and workflow IDs at the top, followed by a `reference_files` dict for inputs that could be used in multiple running modes. The `modes` section specifies inputs specific to a running mode. The TWE config currently only has one running mode:
 * dias_reports
-    * specifies the  inputs for dias_reports.
+    * specifies the inputs for dias_reports.
 
 ## Versions of workflows and dynamic files in the config
 Workflows:
-* Dias reports: **dias_reports_v2.1.0**
-    * DNAnexus workflow ID: `workflow-GXzkfYj4QPQp9z4Jz4BF09y6`
+* Dias reports: **dias_reports_v2.1.1**
+    * DNAnexus workflow ID: `workflow-GgYZpjj4396yBj512yFQZ1fx`
 
 Dynamic files:
 | File      | File name | DNAnexus file ID |
