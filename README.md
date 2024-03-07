@@ -1,4 +1,4 @@
-# dias_TWE_config_GRCh37_v3.1.0.json
+# dias_TWE_config_GRCh37_v3.0.3.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for TWE data.
 
