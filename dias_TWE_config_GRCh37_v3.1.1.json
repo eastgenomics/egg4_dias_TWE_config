@@ -1,8 +1,8 @@
 {
     "assay": "TWE",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "artemis_app_id": "app-GfKV5204ZF35Z47z31Qzqx90",
-    "snv_report_workflow_id": "workflow-GgV037Q4z4VXVqz0j10Q147p",
+    "snv_report_workflow_id": "workflow-Gj2by604ZxY18BX86Jy0b9Xv",
     "reference_files": {
         "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GgBG75Q433Gk4pY5qpxbgVyz",
         "exons_nirvana": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
@@ -32,7 +32,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-GgBz84Q4j4fZYV62y0XXG02g"
+                        "id": "file-GgyqBX04j4fkXy37fGF4j0xb"
                     }
                 },
                 "stage-rpt_vep.vcf": {
