@@ -1,4 +1,4 @@
-# dias_TWE_config_GRCh37_v3.1.0.json
+# dias_TWE_config_GRCh37_v3.1.1.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for TWE data.
 
@@ -11,18 +11,25 @@ New versions of apps and app inputs for use in the Dias pipeline can be updated 
 The config specifies app IDs and workflow IDs at the top, followed by a `reference_files` dict for inputs that could be used in multiple running modes. The `modes` section specifies inputs specific to a running mode. The TWE config currently only has one running mode:
 * dias_reports
     * specifies the inputs for dias_reports.
+* artemis
+    * specifies inputs for [artemis](https://github.com/eastgenomics/eggd_artemis)
 
 ## Versions of workflows and dynamic files in the config
 Workflows:
-* Dias reports: **dias_reports_v2.2.0**
-    * DNAnexus workflow ID: `workflow-GgV037Q4z4VXVqz0j10Q147p`
+* Dias reports: **dias_reports_v2.2.1**
+    * DNAnexus workflow ID: `workflow-Gj766G04ZxY0GVPV0GvXxj9q`
+
+Apps:
+* Artemis app: **eggd_artemis**
+    * v1.4.0
+    * DNAnexus app ID `app-GfKV5204ZF35Z47z31Qzqx90`
 
 Dynamic files:
 | File      | File name | DNAnexus file ID |
 | --------- | --------- | ---------------- |
-| genepanels | **240213_genepanels.tsv** | `file-GgBG75Q433Gk4pY5qpxbgVyz` |
-| exons_nirvana | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
-| genes2transcripts | **240213_g2t.tsv** | `file-GgBG6p8433Gg7XK69fG7P9j7` |
+| genepanels | **240402_genepanels.tsv** | `file-Gj771Q8433GQQZz0gp966kG5` |
+| exons | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
+| genes2transcripts | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
 | panel_dump for eggd_optimised_filtering | **240202_panelapp_dump.json** | `file-Gg35Vf845B5bV08VqJ0qGV5V` |
-| exons_file for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
-| twe_vep_config for SNV reports | **twe_vep_config_v1.1.13.json** | `file-GgBz84Q4j4fZYV62y0XXG02g` |
+| exons_with_symbols for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
+| twe_vep_config for SNV reports | **twe_vep_config_v1.1.14.json** | `file-GgyqBX04j4fkXy37fGF4j0xb` |

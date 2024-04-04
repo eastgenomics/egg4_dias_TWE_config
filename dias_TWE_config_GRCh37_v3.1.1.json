@@ -1,13 +1,13 @@
 {
     "assay": "TWE",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "artemis_app_id": "app-GfKV5204ZF35Z47z31Qzqx90",
-    "snv_report_workflow_id": "workflow-GgV037Q4z4VXVqz0j10Q147p",
+    "snv_report_workflow_id": "workflow-Gj766G04ZxY0GVPV0GvXxj9q",
     "reference_files": {
-        "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GgBG75Q433Gk4pY5qpxbgVyz",
-        "exons_nirvana": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
-        "genes2transcripts": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GgBG6p8433Gg7XK69fG7P9j7",
-        "exonsfile": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gf99pBPbJkV7bq"
+        "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gj771Q8433GQQZz0gp966kG5",
+        "exons": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ",
+        "genes2transcripts": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gj770X8433Gb506pjq1PxXG9",
+        "exons_with_symbols": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gf99pBPbJkV7bq"
     },
     "name_patterns": {
         "Epic": "^[\\d\\w]+-[\\d\\w]+",
@@ -20,19 +20,19 @@
             "inputs": {
                 "stage-rpt_generate_bed_athena.panel": "INPUT-clinical_indications",
                 "stage-rpt_generate_bed_athena.output_file_prefix": "INPUT-test_codes",
-                "stage-rpt_generate_bed_athena.exons": "INPUT-exons_nirvana",
+                "stage-rpt_generate_bed_athena.exons": "INPUT-exons",
                 "stage-rpt_generate_bed_athena.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_athena.gene_panels": "INPUT-genepanels",
                 "stage-rpt_generate_bed_vep.panel": "INPUT-clinical_indications",
                 "stage-rpt_generate_bed_vep.output_file_prefix": "INPUT-test_codes",
-                "stage-rpt_generate_bed_vep.exons": "INPUT-exons_nirvana",
+                "stage-rpt_generate_bed_vep.exons": "INPUT-exons",
                 "stage-rpt_generate_bed_vep.genes2transcripts": "INPUT-genes2transcripts",
                 "stage-rpt_generate_bed_vep.gene_panels": "INPUT-genepanels",
                 "stage-rpt_generate_bed_vep.flank": 495,
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-GgBz84Q4j4fZYV62y0XXG02g"
+                        "id": "file-GgyqBX04j4fkXy37fGF4j0xb"
                     }
                 },
                 "stage-rpt_vep.vcf": {
@@ -66,7 +66,7 @@
                 "stage-rpt_generate_workbook.lock_sheet": true,
                 "stage-rpt_athena.name": "INPUT-sample_name",
                 "stage-rpt_athena.indication": "INPUT-clinical_indications",
-                "stage-rpt_athena.exons_file": "INPUT-exonsfile",
+                "stage-rpt_athena.exons_file": "INPUT-exons_with_symbols",
                 "stage-rpt_athena.limit": 260,
                 "stage-rpt_athena.summary": true,
                 "stage-rpt_athena.mosdepth_files": {
