@@ -19,6 +19,11 @@ Workflows:
 * Dias reports: **dias_reports_v2.2.1**
     * DNAnexus workflow ID: `workflow-Gj766G04ZxY0GVPV0GvXxj9q`
 
+Apps:
+* Artemis app: **eggd_artemis**
+    * v1.4.0
+    * DNAnexus app ID `app-GfKV5204ZF35Z47z31Qzqx90`
+
 Dynamic files:
 | File      | File name | DNAnexus file ID |
 | --------- | --------- | ---------------- |
