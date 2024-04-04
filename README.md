@@ -11,6 +11,8 @@ New versions of apps and app inputs for use in the Dias pipeline can be updated 
 The config specifies app IDs and workflow IDs at the top, followed by a `reference_files` dict for inputs that could be used in multiple running modes. The `modes` section specifies inputs specific to a running mode. The TWE config currently only has one running mode:
 * dias_reports
     * specifies the inputs for dias_reports.
+* artemis
+    * specifies inputs for [artemis](https://github.com/eastgenomics/eggd_artemis)
 
 ## Versions of workflows and dynamic files in the config
 Workflows:
