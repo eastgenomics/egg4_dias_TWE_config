@@ -1,4 +1,4 @@
-# dias_TWE_config_GRCh37_v3.1.3.json
+# dias_TWE_config_GRCh37_v3.1.4.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for TWE data.
 
@@ -16,8 +16,8 @@ The config specifies app IDs and workflow IDs at the top, followed by a `referen
 
 ## Versions of workflows and dynamic files in the config
 Workflows:
-* Dias reports: **dias_reports_v2.2.1**
-    * DNAnexus workflow ID: `workflow-Gj766G04ZxY0GVPV0GvXxj9q`
+* Dias reports: **dias_reports_v2.2.2**
+    * DNAnexus workflow ID: `workflow-GkbJY284FpfgqF8ggz57fVY2`
 
 Apps:
 * Artemis app: **eggd_artemis**
@@ -27,9 +27,9 @@ Apps:
 Dynamic files:
 | File      | File name | DNAnexus file ID |
 | --------- | --------- | ---------------- |
-| genepanels | **240405_genepanels.tsv** | `file-Gj7ygzj42X4ZBqg9068p1fQ4` |
+| genepanels | **240610_genepanels.tsv** | `file-Gkjk6zQ433GyXvqbYGpFBFgx` |
 | exons | **GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gk7gZ47gypK7ZZ` |
 | genes2transcripts | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
 | panel_dump for eggd_optimised_filtering | **240202_panelapp_dump.json** | `file-Gg35Vf845B5bV08VqJ0qGV5V` |
 | exons_with_symbols for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
-| twe_vep_config for SNV reports | **twe_vep_config_v1.1.16.json** | `file-Gk6q5GQ4j4fjZ3kPv9P3B5yK` |
+| twe_vep_config for SNV reports | **twe_vep_config_v1.1.17.json** | `file-GkkB1104j4fkvqqvjJz77zvG` |
