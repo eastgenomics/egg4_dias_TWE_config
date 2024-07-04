@@ -1,4 +1,4 @@
-# dias_TWE_config_GRCh37_v3.1.4.json
+# dias_TWE_config_GRCh37_v3.1.5.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for TWE data.
 
@@ -21,8 +21,8 @@ Workflows:
 
 Apps:
 * Artemis app: **eggd_artemis**
-    * v1.4.0
-    * DNAnexus app ID `app-GfKV5204ZF35Z47z31Qzqx90`
+    * v1.5.0
+    * DNAnexus app ID `app-GkbJ7p0463bjk9VKv3x8G5F80`
 
 Dynamic files:
 | File      | File name | DNAnexus file ID |
