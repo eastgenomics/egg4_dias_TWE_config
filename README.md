@@ -22,7 +22,7 @@ Workflows:
 Apps:
 * Artemis app: **eggd_artemis**
     * v1.5.0
-    * DNAnexus app ID `app-GkbJ7p0463bjk9VKv3x8G5F80`
+    * DNAnexus app ID `app-GkbJ7p0463bjk9VKv3x8G5F8`
 
 Dynamic files:
 | File      | File name | DNAnexus file ID |
