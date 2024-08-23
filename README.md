@@ -1,4 +1,4 @@
-# dias_TWE_config_GRCh37_v3.1.6.json
+# dias_TWE_config_GRCh37_v3.1.7.json
 
 This repo contains a JSON config file which is used with eggd_dias_batch to specify inputs for running the Dias pipeline for TWE data.
 
@@ -32,4 +32,4 @@ Dynamic files:
 | genes2transcripts | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
 | panel_dump for eggd_optimised_filtering | **240202_panelapp_dump.json** | `file-Gg35Vf845B5bV08VqJ0qGV5V` |
 | exons_with_symbols for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
-| twe_vep_config for SNV reports | **twe_vep_config_v1.1.18.json** | `file-GpQQf204j4fykF6gKgZPJjp1` |
+| twe_vep_config for SNV reports | **twe_vep_config_v1.1.19.json** | `file-Gq3Y6q84j4fqV74j8pQ8PKpX` |
