@@ -1,6 +1,6 @@
 {
     "assay": "TWE",
-    "version": "3.1.7",
+    "version": "3.1.8",
     "artemis_app_id": "app-GkbJ7p0463bjk9VKv3x8G5F8",
     "snv_report_workflow_id": "workflow-GkbJY284FpfgqF8ggz57fVY2",
     "reference_files": {
@@ -32,7 +32,7 @@
                 "stage-rpt_vep.config_file": {
                     "$dnanexus_link": {
                         "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
-                        "id": "file-Gq3Y6q84j4fqV74j8pQ8PKpX"
+                        "id": "file-Gqb93pj4j4fbP3QpgXqG1fg2"
                     }
                 },
                 "stage-rpt_vep.vcf": {
