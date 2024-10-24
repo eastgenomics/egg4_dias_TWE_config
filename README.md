@@ -32,4 +32,4 @@ Dynamic files:
 | genes2transcripts | **240402_g2t.tsv** | `file-Gj770X8433Gb506pjq1PxXG9` |
 | panel_dump for eggd_optimised_filtering | **240202_panelapp_dump.json** | `file-Gg35Vf845B5bV08VqJ0qGV5V` |
 | exons_with_symbols for eggd_athena | **GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv** | `file-GF611Z8433Gf99pBPbJkV7bq` |
-| twe_vep_config for SNV reports | **twe_vep_config_v1.1.20.json** | `file-Gqb93pj4j4fbP3QpgXqG1fg2` |
+| twe_vep_config for SNV reports | **twe_vep_config_v1.1.21.json** | `file-GvJ0qp04j4fb5b1z6j88QG6v` |
