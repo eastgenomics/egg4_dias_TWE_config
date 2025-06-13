@@ -19,7 +19,7 @@ The config specifies app IDs and workflow IDs at the top, followed by a `referen
 ## Versions of workflows, apps, and dynamic files in the config
 | Type | Name | dias_TWE_config_GRCh37_v3.3.1.json | dias_TWE_config_GRCh38_v4.0.0.json |
 | -- | -- | -- | -- |
-| App | **eggd_artemis** | v1.5.0 (`app-GkbJ7p0463bjk9VKv3x8G5F8`) | v1.7.0 (`TO-UPDATE`) |
+| App | **eggd_artemis** | v1.5.0 (`app-GkbJ7p0463bjk9VKv3x8G5F8`) | v1.7.0 (`app-J13z26Q49bJkQvG7VB572x0b`) |
 | App | **eggd_GATKgCNV_call** | - | v2.0.0 (`app-GvZB5p846Vg69fBg0Fq10938`)
 | Workflow | **dias_reports** | dias_reports_v2.2.2 (`workflow-GkbJY284FpfgqF8ggz57fVY2`) | dias_reports_v2.2.2 (`workflow-GkbJY284FpfgqF8ggz57fVY2`) |
 | File | **genepanels** | 241024_genepanels.tsv (`file-GvJ5fbQ4qQYq73gjGyP57zFB`) | 250528_genepanels.tsv (`file-J0qJKv04Kp44F8JB3004390k`) |
