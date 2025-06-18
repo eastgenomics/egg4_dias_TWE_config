@@ -17,7 +17,7 @@ The config specifies app IDs and workflow IDs at the top, followed by a `referen
     * specifies inputs for [eggd_artemis](https://github.com/eastgenomics/eggd_artemis).
 
 ## Versions of workflows, apps, and dynamic files in the config
-| Type | Name | dias_TWE_config_GRCh37_v3.3.1.json | dias_TWE_config_GRCh38_v4.0.0.json |
+| Type | Name | dias_TWE_config_GRCh37_v3.3.1.json | dias_TWE_config_GRCh38_v4.1.1.json |
 | -- | -- | -- | -- |
 | App | **eggd_artemis** | v1.5.0 (`app-GkbJ7p0463bjk9VKv3x8G5F8`) | v1.7.0 (`app-J13z26Q49bJkQvG7VB572x0b`) |
 | App | **eggd_GATKgCNV_call** | - | v2.0.0 (`app-GvZB5p846Vg69fBg0Fq10938`)
