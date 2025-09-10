@@ -17,9 +17,9 @@ The config specifies app IDs and workflow IDs at the top, followed by a `referen
     * specifies inputs for [eggd_artemis](https://github.com/eastgenomics/eggd_artemis).
 
 ## Versions of workflows, apps, and dynamic files in the config
-| Type | Name | dias_TWE_config_GRCh37_v3.3.1.json | dias_TWE_config_GRCh38_v4.4.0.json |
+| Type | Name | dias_TWE_config_GRCh37_v3.3.1.json | dias_TWE_config_GRCh38_v4.5.0.json |
 | -- | -- | -- | -- |
-| App | **eggd_artemis** | v1.5.0 (`app-GkbJ7p0463bjk9VKv3x8G5F8`) | v1.7.0 (`app-J13z26Q49bJkQvG7VB572x0b`) |
+| App | **eggd_artemis** | v1.5.0 (`app-GkbJ7p0463bjk9VKv3x8G5F8`) | v1.7.1 (`app-J2pjgJQ4Qg0gk1pQJqqQ6KPz`) |
 | App | **eggd_GATKgCNV_call** | - | v2.0.0 (`app-GvZB5p846Vg69fBg0Fq10938`)
 | Workflow | **dias_reports** | dias_reports_v2.2.2 (`workflow-GkbJY284FpfgqF8ggz57fVY2`) | dias_reports_v2.2.2 (`workflow-GkbJY284FpfgqF8ggz57fVY2`) |
 | File | **genepanels** | 241024_genepanels.tsv (`file-GvJ5fbQ4qQYq73gjGyP57zFB`) | 250711_genepanels.tsv (`file-J1jXFZj4XG7Qvj0PGZGg96Pg`) |
