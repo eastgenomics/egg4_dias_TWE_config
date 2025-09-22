@@ -21,7 +21,7 @@ The config specifies app IDs and workflow IDs at the top, followed by a `referen
 | -- | -- | -- | -- |
 | App | **eggd_artemis** | v1.5.0 (`app-GkbJ7p0463bjk9VKv3x8G5F8`) | v1.7.1 (`app-J2pjgJQ4Qg0gk1pQJqqQ6KPz`) |
 | App | **eggd_GATKgCNV_call** | - | v2.0.0 (`app-GvZB5p846Vg69fBg0Fq10938`)
-| Workflow | **dias_reports** | dias_reports_v2.2.2 (`workflow-GkbJY284FpfgqF8ggz57fVY2`) | dias_reports_v2.2.2 (`workflow-GkbJY284FpfgqF8ggz57fVY2`) |
+| Workflow | **dias_reports** | dias_reports_v2.2.3 (`workflow-J2j7GzQ432PYvJ9P270bfj88`) | dias_reports_v2.2.3 (`workflow-J2j7GzQ432PYvJ9P270bfj88`) |
 | File | **genepanels** | 241024_genepanels.tsv (`file-GvJ5fbQ4qQYq73gjGyP57zFB`) | 250711_genepanels.tsv (`file-J1jXFZj4XG7Qvj0PGZGg96Pg`) |
 | File | **panel_dump for eggd_optimised_filtering** | 241030_panelapp_dump.json (`file-GvVg3qj4Y54jBF8bgX62gkfQ`) | 250530_panelapp_dump.json (`file-J0yk3V04VVYxJ9bz3QPPzxPg`) |
 | File | **exons** | GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv (`file-GF611Z8433Gk7gZ47gypK7ZZ`) | GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv (`file-GyFfgpQ4fJPv132574bFQfV5`) |
