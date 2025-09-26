@@ -27,4 +27,4 @@ The config specifies app IDs and workflow IDs at the top, followed by a `referen
 | File | **exons** | GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv (`file-GF611Z8433Gk7gZ47gypK7ZZ`) | GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv (`file-GyFfgpQ4fJPv132574bFQfV5`) |
 | File | **genes2transcripts** | 240402_g2t.tsv (`file-Gj770X8433Gb506pjq1PxXG9`) | g2t_grch38_v2.1.0.tsv (`file-J1q297j4J0b3V741GxbX0Q14`) |
 | File | **exons_with_symbols for eggd_athena** | GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv (`file-GF611Z8433Gf99pBPbJkV7bq`) | GCF_000001405.39_GRCh38.p13_genomic_20211119.symbols.exon_5bp.tsv (`file-Gyb29P84fJPqZJ37pfjz1vZB`) |
-| File | **twe_vep_config for SNV reports** | twe_vep_config_v1.2.1.json (`file-J051vX04j4fjv5YvY53JJK3V`) | twe_vep_config_GRCh38_v1.1.4.json(`file-J2XpZYQ4j4fqGJGbkZjfZQkp`) |
+| File | **twe_vep_config for SNV reports** | twe_vep_config_v1.2.1.json (`file-J051vX04j4fjv5YvY53JJK3V`) | twe_vep_config_GRCh38_v1.1.5.json(`file-J36236Q4j4fp595fbYBV5k9f`) |
