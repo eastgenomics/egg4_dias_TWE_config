@@ -17,7 +17,7 @@ The config specifies app IDs and workflow IDs at the top, followed by a `referen
     * specifies inputs for [eggd_artemis](https://github.com/eastgenomics/eggd_artemis).
 
 ## Versions of workflows, apps, and dynamic files in the config
-| Type | Name | dias_TWE_config_GRCh37_v3.3.1.json | dias_TWE_config_GRCh38_v4.7.2.json |
+| Type | Name | GRCh37 file | GRCh38 file |
 | -- | -- | -- | -- |
 | App | **eggd_artemis** | v1.5.0 (`app-GkbJ7p0463bjk9VKv3x8G5F8`) | v1.7.1 (`app-J2pjgJQ4Qg0gk1pQJqqQ6KPz`) |
 | App | **eggd_GATKgCNV_call** | - | v2.0.1 (`app-J2gK76Q4FqqkPxZBkJYBj632`)
@@ -27,4 +27,4 @@ The config specifies app IDs and workflow IDs at the top, followed by a `referen
 | File | **exons** | GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv (`file-GF611Z8433Gk7gZ47gypK7ZZ`) | GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv (`file-GyFfgpQ4fJPv132574bFQfV5`) |
 | File | **genes2transcripts** | 240402_g2t.tsv (`file-Gj770X8433Gb506pjq1PxXG9`) | g2t_grch38_v2.1.0.tsv (`file-J1q297j4J0b3V741GxbX0Q14`) |
 | File | **exons_with_symbols for eggd_athena** | GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv (`file-GF611Z8433Gf99pBPbJkV7bq`) | GCF_000001405.39_GRCh38.p13_genomic_20211119.symbols.exon_5bp.tsv (`file-Gyb29P84fJPqZJ37pfjz1vZB`) |
-| File | **twe_vep_config for SNV reports** | twe_vep_config_v1.2.1.json (`file-J051vX04j4fjv5YvY53JJK3V`) | twe_vep_config_GRCh38_v1.1.8.json(`file-J50fZK84j4fZBV16yK4Jzjg7`) |
+| File | **twe_vep_config for SNV reports** | twe_vep_config_v1.2.1.json (`file-J051vX04j4fjv5YvY53JJK3V`) | twe_vep_config_GRCh38_v1.2.0.json(`file-J6bJ22Q4j4fpxv2V094GGPqX`) |
