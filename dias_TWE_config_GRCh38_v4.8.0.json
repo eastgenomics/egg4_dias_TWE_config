@@ -83,7 +83,7 @@
                 "stage-rpt_generate_workbook.output_prefix": "INPUT-sample_name",
                 "stage-rpt_generate_workbook.exclude_columns": "BaseQRankSum ClippingRankSum DB ExcessHet FS MLEAC MLEAF MQ MQRankSum QD ReadPosRankSum SOR PL QUAL ID FILTER  CSQ_ClinVar_CLNSIGCONF  CSQ_Allele CSQ_HGNC_ID DP AC AF AN CSQ_SpliceAI_pred_DP_AL CSQ_SpliceAI_pred_DP_AG CSQ_SpliceAI_pred_DP_DG CSQ_SpliceAI_pred_DP_DL CSQ_gnomADe_AC_grpmax CSQ_gnomADe_AN_grpmax CSQ_gnomADe_nhomalt_grpmax CSQ_gnomADe_grpmax CSQ_gnomADg_AC_grpmax CSQ_gnomADg_AN_grpmax CSQ_gnomADg_nhomalt_grpmax CSQ_gnomADg_grpmax CSQ_Medicover_AF CSQ_Medicover_AC_Hom CSQ_Medicover_AC_Het CSQ_Medicover_AN",
                 "stage-rpt_generate_workbook.acmg": 3,
-                "stage-rpt_generate_workbook.rename_columns": "CSQ_Feature=Transcript DP_FMT=DP",
+                "stage-rpt_generate_workbook.rename_columns": "CSQ_Feature=Transcript DP_FMT=DP CSQ_CEN_CEN_v1_HET_COUNT=CEN_v1_HET_COUNT CSQ_CEN_CEN_v1_HOM_COUNT=CEN_v1_HOM_COUNT CSQ_CEN_CEN_v1_AC=CEN_v1_AC CSQ_CEN_CEN_v1_AN=CEN_v1_AN CSQ_CEN_CEN_v1_AF=CEN_v1_AF CSQ_TWE_WES_v1_HET_COUNT=TWE_v1_HET_COUNT CSQ_TWE_WES_v1_HOM_COUNT=TWE_v1_HOM_COUNT CSQ_TWE_WES_v1_AC=TWE_v1_AC CSQ_TWE_WES_v1_AN=TWE_v1_AN CSQ_TWE_WES_v1_AF=TWE_v1_AF",
                 "stage-rpt_generate_workbook.add_comment_column": true,
                 "stage-rpt_generate_workbook.keep_tmp": true,
                 "stage-rpt_generate_workbook.summary": "dias",
