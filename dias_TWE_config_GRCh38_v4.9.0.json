@@ -8,7 +8,8 @@
         "genepanels": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-J1jXFZj4XG7Qvj0PGZGg96Pg",
         "exons": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GyFfgpQ4fJPv132574bFQfV5",
         "genes2transcripts": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-J1q297j4J0b3V741GxbX0Q14",
-        "exons_with_symbols": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gyb29P84fJPqZJ37pfjz1vZB"
+        "exons_with_symbols": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-Gyb29P84fJPqZJ37pfjz1vZB",
+        "cnv_indications": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GXGx8q0433GgKqx52Jqz1p47"
     },
     "name_patterns": {
         "Epic": "^[\\d\\w]+-[\\d\\w]+",
