@@ -18,7 +18,8 @@
     "mode_file_patterns" : {
         "cnv_reports" : {
             "sample": [
-                "_segments.vcf$"
+                "_segments.vcf$",
+                "_segments_annotated.seg$"
             ],
             "run" : [
                 "_excluded_intervals.bed$"
@@ -26,7 +27,7 @@
         },
         "snv_reports" : {
             "sample": [
-                "_markdup_recalibrated_Haplotyper.vcf.gz$",
+                "_markdup_additional_regions.vcf.gz$",
                 "per-base.bed.gz$",
                 "reference_build.txt$"
             ],
@@ -34,7 +35,8 @@
         },
         "mosaic_reports": {
             "sample": [
-                "_markdup_recalibrated_tnhaplotyper2.vcf.gz",
+                "_markdup_recalibrated_tnhaplotyper2.vcf.gz$",
+                "_markdup_recalibrated_tnhaplotyper2.vcf.gz.tbi$",
                 "per-base.bed.gz$",
                 "reference_build.txt$"
             ],
@@ -79,7 +81,8 @@
                     }
                 },
                 "scatter_by_chromosome": true
-            }
+            },
+            "min_samples": 32
         },
         "snv_reports": {
             "stage_instance_types": {
