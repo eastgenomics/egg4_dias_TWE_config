@@ -8,7 +8,7 @@ eggd_dias_batch ([https://github.com/eastgenomics/eggd_dias_batch](https://githu
 New versions of apps and app inputs for use in the Dias pipeline can be updated in the config without needing to update the pipeline itself.
 
 ## Parts of the config
-The config specifies app IDs and workflow IDs at the top, followed by a `reference_files` dict for inputs that could be used in multiple running modes. The `modes` section specifies inputs specific to a running mode:
+The config specifies app IDs and workflow IDs at the top, followed by a `reference_files` dict for inputs that could be used in multiple running modes. The `mode_file_patterns` dict specifies per-mode regex patterns used to search for files during archived and missing file checks. The `modes` section specifies inputs specific to a running mode:
 * cnv_call
     * specifies inputs for CNV calling.
 * snv_reports
@@ -27,4 +27,5 @@ The config specifies app IDs and workflow IDs at the top, followed by a `referen
 | File | **exons** | GCF_000001405.25_GRCh37.p13_genomic.exon_5bp_v2.0.0.tsv (`file-GF611Z8433Gk7gZ47gypK7ZZ`) | GCF_000001405.39_GRCh38.p13_genomic_20211119.exon_5bp.tsv (`file-GyFfgpQ4fJPv132574bFQfV5`) |
 | File | **genes2transcripts** | 240402_g2t.tsv (`file-Gj770X8433Gb506pjq1PxXG9`) | g2t_grch38_v2.1.0.tsv (`file-J1q297j4J0b3V741GxbX0Q14`) |
 | File | **exons_with_symbols for eggd_athena** | GCF_000001405.25_GRCh37.p13_genomic.symbols.exon_5bp_v2.0.0.tsv (`file-GF611Z8433Gf99pBPbJkV7bq`) | GCF_000001405.39_GRCh38.p13_genomic_20211119.symbols.exon_5bp.tsv (`file-Gyb29P84fJPqZJ37pfjz1vZB`) |
+| File | **cnv_indications (R codes for CNV analysis)** | - | 230626-r-codes-cnv-only-TDv5.1.txt  (`file-GXGx8q0433GgKqx52Jqz1p47`) |
 | File | **twe_vep_config for SNV reports** | twe_vep_config_v1.2.1.json (`file-J051vX04j4fjv5YvY53JJK3V`) | twe_vep_config_GRCh38_v1.2.8.json(`file-JFFj2PQ4j4fkx1FzK27PKXbf`) |
