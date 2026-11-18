@@ -18,38 +18,38 @@
     "mode_file_patterns" : {
         "cnv_reports" : {
             "sample": [
-                "_segments.vcf$",
-                "_segments_annotated.seg$"
+                "_segments\\.vcf$",
+                "_segments_annotated\\.seg$"
             ],
             "run" : [
-                "_excluded_intervals.bed$"
+                "_excluded_intervals\\.bed$"
             ]
         },
         "snv_reports" : {
             "sample": [
-                "_markdup_additional_regions.vcf.gz$",
-                "per-base.bed.gz$",
-                "reference_build.txt$"
+                "_markdup_additional_regions\\.vcf\\.gz$",
+                "per-base\\.bed\\.gz$",
+                "reference_build\\.txt$"
             ],
             "run": [] 
         },
         "mosaic_reports": {
             "sample": [
-                "_markdup_recalibrated_tnhaplotyper2.vcf.gz$",
-                "per-base.bed.gz$",
-                "reference_build.txt$"
+                "_markdup_recalibrated_tnhaplotyper2\\.vcf\\.gz$",
+                "per-base\\.bed\\.gz$",
+                "reference_build\\.txt$"
             ],
             "run": []
         },
         "artemis": {
             "sample": [
                 "bam$",
-                "bam.bai$",
-                "_copy_ratios.gcnv.bed.gz$",
-                "_copy_ratios.gcnv.bed.gz.tbi$"
+                "bam\\.bai$",
+                "_copy_ratios\\.gcnv\\.bed\\.gz$",
+                "_copy_ratios\\.gcnv\\.bed\\.gz\\.tbi$"
             ],
             "run": [
-                "-multiqc.html"
+                "-multiqc\\.html"
             ]
         }
     },    
@@ -59,7 +59,7 @@
             "inputs": {
                 "bambais": {
                     "folder": "/sentieon-dnaseq/",
-                    "name": ".bam$|.bam.bai$"
+                    "name": "\\.bam$|\\.bam\\.bai$"
                 },
                 "GATK_docker": {
                     "$dnanexus_link": {
@@ -142,7 +142,7 @@
                 "stage-rpt_athena.summary_file": true,
                 "stage-rpt_athena.mosdepth_files": {
                     "folder": "eggd_mosdepth",
-                    "name": "per-base.bed.gz$|reference_build.txt$"
+                    "name": "per-base\\.bed\\.gz$|reference_build\\.txt$"
                 }
             }
         },
